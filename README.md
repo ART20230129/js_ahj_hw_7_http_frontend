@@ -1,3 +1,6 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/gbmbwp753joi3fpg?svg=true)](https://ci.appveyor.com/project/ART20230129/js-ahj-hw-7-http-frontend)
+
+
 # Домашнее задание к занятию "7. Работа с HTTP"
 
 Правила сдачи задания:

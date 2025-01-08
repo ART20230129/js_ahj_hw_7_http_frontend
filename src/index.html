@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>HTTS</title>
+</head>
+<body>
+
+        <div class="limiting-container">
+                <div class="main-section">
+                        <button class="addTicket">Добавить тикет</button>
+                </div>
+        
+                <div class="tasks" id="taskList">      
+                </div>
+
+
+        </div>
+
+       
+
+
+        <div class="modalOpen" style="display: none;">
+                <h2 class="windowTitle">Добавить задачу</h2>
+                        <div class="form-row">
+                                <form class="ticketForm">
+                                        <label for="shortDescription">Краткое описание:</label><br>
+                                        <input type="text" id="shortDescription" class="field" placeholder="Название задачи" required><br>
+
+                                        <label for="fullDescription">Подробное описание:</label><br>
+                                        <textarea id="fullDescription" class="field-area" rows="6" placeholder="Подробное опишите задачу" required></textarea><br>
+
+                                        <input type="hidden" id="editTicketId"> <!-- Скрытое поле для выбора действия Добавить/Изменить задачу -->
+                                        <button type="button" class="cancelButton">Отмена</button>
+                                        <button type="submit" class="okButton">ОК</button><br>
+
+
+                                </form>
+                </div>
+        </div>
+
+
+        <div class="delete-modal" style="display: none;" id="deleteModal">
+                <h2>Вы действительно хотите удалить данный тикет???</h2>
+                <br>
+                <h2>ЭТА ОПЕРАЦИЯ НЕОБРАТИМА</h2>
+                <button type="button" class="cancelButton">Отмена</button>
+                <button type="submit" class="okButton">ОК</button>
+        </div>
+</body>
+</html>
